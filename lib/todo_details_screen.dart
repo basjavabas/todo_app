@@ -15,9 +15,14 @@ class TodoDetailsScreen extends StatelessWidget {
         child: Container(
           color: Colors.amber[100],
           child: Center(
-              child: Text(
-            mytodo.description,
-            style: TextStyle(fontSize: 30),
+              child: Column(
+            children: [
+              Text(mytodo.title),
+              Text(
+                mytodo.description,
+                style: TextStyle(fontSize: 30),
+              ),
+            ],
           )),
         ),
       ),
